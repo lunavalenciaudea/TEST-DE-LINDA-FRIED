@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TEST_DE_LINDA_FRIED
 {
-    public partial class Form1 : Form
+    public partial class InicioDeSesion : Form
     {
-        public Form1()
+        public InicioDeSesion()
         {
             InitializeComponent();
         }
