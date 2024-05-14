@@ -106,6 +106,7 @@
             this.lblPrimerNombre.Size = new System.Drawing.Size(76, 13);
             this.lblPrimerNombre.TabIndex = 4;
             this.lblPrimerNombre.Text = "Primer Nombre";
+            this.lblPrimerNombre.Click += new System.EventHandler(this.lblPrimerNombre_Click);
             // 
             // lblSegundoNombre
             // 

@@ -31,5 +31,10 @@ namespace TEST_DE_LINDA_FRIED
         {
 
         }
+
+        private void lblPrimerNombre_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
