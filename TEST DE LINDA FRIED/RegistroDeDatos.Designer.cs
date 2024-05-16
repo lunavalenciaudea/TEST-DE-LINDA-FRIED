@@ -53,6 +53,7 @@
             this.txtMunicipioResidencia = new System.Windows.Forms.TextBox();
             this.txtDepartamentoResidencia = new System.Windows.Forms.TextBox();
             this.txtDirecciónResidencia = new System.Windows.Forms.TextBox();
+            this.btnContinuarRegistrodedatos = new System.Windows.Forms.Button();
             this.gbSexo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -273,12 +274,22 @@
             this.txtDirecciónResidencia.Size = new System.Drawing.Size(153, 20);
             this.txtDirecciónResidencia.TabIndex = 24;
             // 
+            // btnContinuarRegistrodedatos
+            // 
+            this.btnContinuarRegistrodedatos.Location = new System.Drawing.Point(371, 394);
+            this.btnContinuarRegistrodedatos.Name = "btnContinuarRegistrodedatos";
+            this.btnContinuarRegistrodedatos.Size = new System.Drawing.Size(91, 30);
+            this.btnContinuarRegistrodedatos.TabIndex = 25;
+            this.btnContinuarRegistrodedatos.Text = "CONTINUAR";
+            this.btnContinuarRegistrodedatos.UseVisualStyleBackColor = true;
+            // 
             // IngresoDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnContinuarRegistrodedatos);
             this.Controls.Add(this.txtDirecciónResidencia);
             this.Controls.Add(this.txtDepartamentoResidencia);
             this.Controls.Add(this.txtMunicipioResidencia);
@@ -338,6 +349,7 @@
         private System.Windows.Forms.TextBox txtMunicipioResidencia;
         private System.Windows.Forms.TextBox txtDepartamentoResidencia;
         private System.Windows.Forms.TextBox txtDirecciónResidencia;
+        private System.Windows.Forms.Button btnContinuarRegistrodedatos;
     }
 }
 

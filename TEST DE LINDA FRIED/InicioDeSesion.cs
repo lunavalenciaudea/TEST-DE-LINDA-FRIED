@@ -16,5 +16,15 @@ namespace TEST_DE_LINDA_FRIED
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
