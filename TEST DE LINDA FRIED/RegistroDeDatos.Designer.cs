@@ -1,4 +1,7 @@
-﻿namespace TEST_DE_LINDA_FRIED
+﻿using System;
+using System.Windows.Forms;
+
+namespace TEST_DE_LINDA_FRIED
 {
     partial class IngresoDeDatos
     {
@@ -20,6 +23,7 @@
             base.Dispose(disposing);
         }
 
+       
         #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>
@@ -44,7 +48,7 @@
             this.lblMunicipioResidencia = new System.Windows.Forms.Label();
             this.txtPirmerNombre = new System.Windows.Forms.TextBox();
             this.txtSegundoNombre = new System.Windows.Forms.TextBox();
-            this.txtPrimerNombre = new System.Windows.Forms.TextBox();
+            this.txtPrimerApellido = new System.Windows.Forms.TextBox();
             this.txtSegundoApellido = new System.Windows.Forms.TextBox();
             this.txtNumeroDocumento = new System.Windows.Forms.TextBox();
             this.cboTipoDocumento = new System.Windows.Forms.ComboBox();
@@ -205,12 +209,12 @@
             this.txtSegundoNombre.Size = new System.Drawing.Size(144, 20);
             this.txtSegundoNombre.TabIndex = 15;
             // 
-            // txtPrimerNombre
+            // txtPrimerApellido
             // 
-            this.txtPrimerNombre.Location = new System.Drawing.Point(228, 175);
-            this.txtPrimerNombre.Name = "txtPrimerNombre";
-            this.txtPrimerNombre.Size = new System.Drawing.Size(144, 20);
-            this.txtPrimerNombre.TabIndex = 16;
+            this.txtPrimerApellido.Location = new System.Drawing.Point(228, 175);
+            this.txtPrimerApellido.Name = "txtPrimerApellido";
+            this.txtPrimerApellido.Size = new System.Drawing.Size(144, 20);
+            this.txtPrimerApellido.TabIndex = 16;
             // 
             // txtSegundoApellido
             // 
@@ -229,6 +233,10 @@
             // cboTipoDocumento
             // 
             this.cboTipoDocumento.FormattingEnabled = true;
+            this.cboTipoDocumento.Items.AddRange(new object[] {
+            "Cedula de Ciudadania",
+            "Tarjeta de Identidad",
+            "Cedula de Extranjeria"});
             this.cboTipoDocumento.Location = new System.Drawing.Point(228, 344);
             this.cboTipoDocumento.Name = "cboTipoDocumento";
             this.cboTipoDocumento.Size = new System.Drawing.Size(144, 21);
@@ -273,6 +281,7 @@
             this.txtDirecciónResidencia.Name = "txtDirecciónResidencia";
             this.txtDirecciónResidencia.Size = new System.Drawing.Size(153, 20);
             this.txtDirecciónResidencia.TabIndex = 24;
+            this.txtDirecciónResidencia.TextChanged += new System.EventHandler(this.txtDirecciónResidencia_TextChanged);
             // 
             // btnContinuarRegistrodedatos
             // 
@@ -282,6 +291,7 @@
             this.btnContinuarRegistrodedatos.TabIndex = 25;
             this.btnContinuarRegistrodedatos.Text = "CONTINUAR";
             this.btnContinuarRegistrodedatos.UseVisualStyleBackColor = true;
+            this.btnContinuarRegistrodedatos.Click += new System.EventHandler(this.btnContinuarRegistrodedatos_Click);
             // 
             // IngresoDeDatos
             // 
@@ -298,7 +308,7 @@
             this.Controls.Add(this.cboTipoDocumento);
             this.Controls.Add(this.txtNumeroDocumento);
             this.Controls.Add(this.txtSegundoApellido);
-            this.Controls.Add(this.txtPrimerNombre);
+            this.Controls.Add(this.txtPrimerApellido);
             this.Controls.Add(this.txtSegundoNombre);
             this.Controls.Add(this.txtPirmerNombre);
             this.Controls.Add(this.lblMunicipioResidencia);
@@ -340,7 +350,7 @@
         private System.Windows.Forms.Label lblMunicipioResidencia;
         private System.Windows.Forms.TextBox txtPirmerNombre;
         private System.Windows.Forms.TextBox txtSegundoNombre;
-        private System.Windows.Forms.TextBox txtPrimerNombre;
+        private System.Windows.Forms.TextBox txtPrimerApellido;
         private System.Windows.Forms.TextBox txtSegundoApellido;
         private System.Windows.Forms.TextBox txtNumeroDocumento;
         private System.Windows.Forms.ComboBox cboTipoDocumento;
@@ -351,5 +361,6 @@
         private System.Windows.Forms.TextBox txtDirecciónResidencia;
         private System.Windows.Forms.Button btnContinuarRegistrodedatos;
     }
+
 }
 

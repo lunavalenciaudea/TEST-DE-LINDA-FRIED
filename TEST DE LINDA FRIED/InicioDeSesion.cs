@@ -26,5 +26,13 @@ namespace TEST_DE_LINDA_FRIED
         {
 
         }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            IngresoDeDatos ingresoDeDatos= new  IngresoDeDatos();
+            ingresoDeDatos.Show();
+            this.Hide();
+
+        }
     }
 }

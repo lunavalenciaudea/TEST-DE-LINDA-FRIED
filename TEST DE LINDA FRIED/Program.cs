@@ -16,7 +16,7 @@ namespace TEST_DE_LINDA_FRIED
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new IngresoDeDatos());
+            Application.Run(new InicioDeSesion());
         }
     }
 }
