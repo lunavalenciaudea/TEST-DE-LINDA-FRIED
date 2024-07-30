@@ -74,8 +74,8 @@ namespace TEST_DE_LINDA_FRIED
             this.rdbSi9 = new System.Windows.Forms.RadioButton();
             this.btnGuardarTest = new System.Windows.Forms.Button();
             this.lblConteodeRespuestasSI = new System.Windows.Forms.Label();
-            this.txbRspuestasSI = new System.Windows.Forms.TextBox();
-            this.txbRespuestasNO = new System.Windows.Forms.TextBox();
+            this.txtRespuestasSI = new System.Windows.Forms.TextBox();
+            this.txtRespuestasNO = new System.Windows.Forms.TextBox();
             this.lblConteodeRespuestasNO = new System.Windows.Forms.Label();
             this.gbPregunta1.SuspendLayout();
             this.gbPregunta2.SuspendLayout();
@@ -539,19 +539,21 @@ namespace TEST_DE_LINDA_FRIED
             this.lblConteodeRespuestasSI.TabIndex = 25;
             this.lblConteodeRespuestasSI.Text = "indique cuantas opciones marco con \"SI\" ";
             // 
-            // txbRspuestasSI
+            // txtRespuestasSI
             // 
-            this.txbRspuestasSI.Location = new System.Drawing.Point(598, 608);
-            this.txbRspuestasSI.Name = "txbRspuestasSI";
-            this.txbRspuestasSI.Size = new System.Drawing.Size(100, 20);
-            this.txbRspuestasSI.TabIndex = 26;
+            this.txtRespuestasSI.Location = new System.Drawing.Point(598, 608);
+            this.txtRespuestasSI.Name = "txtRespuestasSI";
+            this.txtRespuestasSI.Size = new System.Drawing.Size(100, 20);
+            this.txtRespuestasSI.TabIndex = 26;
+            this.txtRespuestasSI.TextChanged += new System.EventHandler(this.txtRespuestasSI_TextChanged);
             // 
-            // txbRespuestasNO
+            // txtRespuestasNO
             // 
-            this.txbRespuestasNO.Location = new System.Drawing.Point(598, 657);
-            this.txbRespuestasNO.Name = "txbRespuestasNO";
-            this.txbRespuestasNO.Size = new System.Drawing.Size(100, 20);
-            this.txbRespuestasNO.TabIndex = 27;
+            this.txtRespuestasNO.Location = new System.Drawing.Point(598, 657);
+            this.txtRespuestasNO.Name = "txtRespuestasNO";
+            this.txtRespuestasNO.Size = new System.Drawing.Size(100, 20);
+            this.txtRespuestasNO.TabIndex = 27;
+            this.txtRespuestasNO.TextChanged += new System.EventHandler(this.txtRespuestasNO_TextChanged);
             // 
             // lblConteodeRespuestasNO
             // 
@@ -569,8 +571,8 @@ namespace TEST_DE_LINDA_FRIED
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(963, 751);
             this.Controls.Add(this.lblConteodeRespuestasNO);
-            this.Controls.Add(this.txbRespuestasNO);
-            this.Controls.Add(this.txbRspuestasSI);
+            this.Controls.Add(this.txtRespuestasNO);
+            this.Controls.Add(this.txtRespuestasSI);
             this.Controls.Add(this.lblConteodeRespuestasSI);
             this.Controls.Add(this.btnGuardarTest);
             this.Controls.Add(this.gbPregunta9);
@@ -671,8 +673,8 @@ namespace TEST_DE_LINDA_FRIED
         private System.Windows.Forms.RadioButton rdbSi9;
         private System.Windows.Forms.Button btnGuardarTest;
         private System.Windows.Forms.Label lblConteodeRespuestasSI;
-        private System.Windows.Forms.TextBox txbRspuestasSI;
-        private System.Windows.Forms.TextBox txbRespuestasNO;
+        private System.Windows.Forms.TextBox txtRespuestasSI;
+        private System.Windows.Forms.TextBox txtRespuestasNO;
         private System.Windows.Forms.Label lblConteodeRespuestasNO;
     }
 }

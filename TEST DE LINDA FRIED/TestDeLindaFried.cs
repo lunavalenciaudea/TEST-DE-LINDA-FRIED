@@ -34,27 +34,15 @@ namespace TEST_DE_LINDA_FRIED
 
         private void btnGuardarTest_Click(object sender, EventArgs e)
         {
-            List<string> respuestas = ObtenerRespuestas();
-            RespuestasTest respuestasTest = new RespuestasTest(respuestas);
+
+            int numeroSi= int.Parse(txtRespuestasSI.Text);
+            int numeroNo= int.Parse(txtRespuestasNO.Text);
+            RespuestasTest respuestasTest = new RespuestasTest(numeroSi);
             respuestasTest.ShowDialog();
+            this.Hide();
 
         }
-        private List<string> ObtenerRespuestas()
-
-        {
-            List<string> respuestas = new List<string>();
-            respuestas.Add(ObtenerRespuestaGroupBox(gbPregunta1));
-            respuestas.Add(ObtenerRespuestaGroupBox(gbPregunta2));
-            respuestas.Add(ObtenerRespuestaGroupBox(gbPregunta3));
-            respuestas.Add(ObtenerRespuestaGroupBox(gbPregunta4));
-            respuestas.Add(ObtenerRespuestaGroupBox(gbPregunta5));
-            respuestas.Add(ObtenerRespuestaGroupBox(gbPregunta6));
-            respuestas.Add(ObtenerRespuestaGroupBox(gbPregunta7));
-            respuestas.Add(ObtenerRespuestaGroupBox(gbPregunta8));
-            respuestas.Add(ObtenerRespuestaGroupBox(gbPregunta9));
-            return respuestas;
-
-        }
+       
         private string ObtenerRespuestaGroupBox(GroupBox groupBox)
         {
             foreach (Control control in groupBox.Controls)
@@ -72,6 +60,17 @@ namespace TEST_DE_LINDA_FRIED
                 }
             }
             return "No contestado";
+        }
+
+        private void txtRespuestasSI_TextChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void txtRespuestasNO_TextChanged(object sender, EventArgs e)
+        {
+          
         }
     }
 }

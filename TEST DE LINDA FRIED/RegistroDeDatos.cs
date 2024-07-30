@@ -40,14 +40,13 @@ namespace TEST_DE_LINDA_FRIED
         private void btnContinuarRegistrodedatos_Click(object sender, EventArgs e)
         {
            
-        if (!ValidarDatos1())
+        if (ValidarDatos1())
             {
-              
+                MenuPrincipalTest menuPrincipalTest = new MenuPrincipalTest();
+                menuPrincipalTest.Show();
+                this.Hide();
             }
-        return;
-
-
-        
+  
         }
 
         private bool ValidarDatos1()
@@ -63,24 +62,20 @@ namespace TEST_DE_LINDA_FRIED
                 MessageBox.Show("Por favor ingrese su primer Apellido ");
                 return false;
             }
-            if (string.IsNullOrEmpty(txtSegundoApellido.Text))
-            {
-                MessageBox.Show("Por favor ingrese su segundo Apellido ");
-                return false;
-            }
+           
             if (string.IsNullOrEmpty(txtNumeroDocumento.Text))
             {
                 MessageBox.Show("Por favor digite su numero de documento");
                 return false;
             }
-            if (string.IsNullOrEmpty(txtMunicipioResidencia.Text))
+            if (cboDepartamentoResidencia.SelectedIndex == -1)
             {
-                MessageBox.Show("Por favor indique su Municipio de residencia ");
+                MessageBox.Show("por favor seleccione un Departamento");
                 return false;
             }
-            if (string.IsNullOrEmpty(txtDepartamentoResidencia.Text))
+            if (cboMunicipioDeResidencia.SelectedIndex == -1)
             {
-                MessageBox.Show("Por favor indique su Departamento de residencia ");
+                MessageBox.Show("por favor seleccione un Municipio");
                 return false;
             }
             if (string.IsNullOrEmpty(txtDirecciónResidencia.Text))
@@ -93,16 +88,10 @@ namespace TEST_DE_LINDA_FRIED
                 MessageBox.Show("la fecha de nacimeinto no puede ser en el futuro");
                 return false;
             }
-            if (cboTipoDocumento.SelectedIndex == -1)
-            {
-                MessageBox.Show("por favor seleccione un tipo de documento");
-                return false;
-            }
+            
             return true;
 
-        MenuPrincipalTest menuPrincipalTest = new MenuPrincipalTest();
-        menuPrincipalTest.Show();
-        this.Hide();
+        
 
         }
 
@@ -119,9 +108,14 @@ namespace TEST_DE_LINDA_FRIED
             throw new NotImplementedException();
         }
 
-        private void txtDirecciónResidencia_TextChanged(object sender, EventArgs e)
+        private void txtDirecciónResidencia_TextChangjed(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtNumeroDocumento_Keypress(object sender, KeyPressEventArgs e)
+        {
+          
         }
     }
 }

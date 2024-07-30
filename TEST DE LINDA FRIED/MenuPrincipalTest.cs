@@ -24,12 +24,30 @@ namespace TEST_DE_LINDA_FRIED
 
         private void rdbRealizarTest_CheckedChanged(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btnContinuarMenu_Click(object sender, EventArgs e)
+        {
             if (rdbRealizarTest.Checked)
             {
+               
                 TESTDELINDAFRIED tESTDELINDAFRIED = new TESTDELINDAFRIED();
-                tESTDELINDAFRIED.Show();
+                tESTDELINDAFRIED.ShowDialog();
                 this.Hide();
             }
+            else if (rdbVolverInicio.Checked)
+            {
+                
+                InicioDeSesion inicioDeSesion = new InicioDeSesion();
+                inicioDeSesion.ShowDialog();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Selecciona una opción antes de continuar.");
+            }
+            this.Hide();
         }
     }
 }

@@ -19,6 +19,30 @@ namespace TEST_DE_LINDA_FRIED
         {
             InitializeComponent();
         }
+        public RespuestasTest(int cantidadSi)
+        {
+            InitializeComponent();
+            string resultado = Calcular(cantidadSi);
+            lblResultados.Text = resultado;
+
+        }
+        private string Calcular(int CantidadSi)
+        {
+            if (CantidadSi == 0)
+            {
+                return "ROBUSTO";
+            }
+            else if (CantidadSi >= 1 && CantidadSi <= 2)
+            {
+                return "PRE-FRAGIL";
+            }
+            else // Si es 3 o más
+            {
+                return "FRAGIL";
+            }
+
+
+        }
 
         public RespuestasTest(List<string> respuestas, int cantidadSi, int cantidadNo)
         {
@@ -45,16 +69,13 @@ namespace TEST_DE_LINDA_FRIED
 
         private void MostrarRespuestas()
         {
-
-            listBoxRespuestas.Items.Clear();
-
-
-            foreach (string respuesta in respuestas)
-            {
-                listBoxRespuestas.Items.Add(respuesta);
-            }
         }
 
-       
+        private void btnSalirResultado_Click(object sender, EventArgs e)
+        {
+            InicioDeSesion inicioDeSesion = new InicioDeSesion();
+            inicioDeSesion.ShowDialog();
+            this.Hide();
+        }
     }
 }

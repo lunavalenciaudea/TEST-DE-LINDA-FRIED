@@ -30,7 +30,6 @@
         {
             this.lblMenuPrincipal = new System.Windows.Forms.Label();
             this.rdbRealizarTest = new System.Windows.Forms.RadioButton();
-            this.rdbVisualizarResultado = new System.Windows.Forms.RadioButton();
             this.rdbVolverInicio = new System.Windows.Forms.RadioButton();
             this.btnContinuarMenu = new System.Windows.Forms.Button();
             this.gpbGrupoMenuP = new System.Windows.Forms.GroupBox();
@@ -50,7 +49,7 @@
             // rdbRealizarTest
             // 
             this.rdbRealizarTest.AutoSize = true;
-            this.rdbRealizarTest.Location = new System.Drawing.Point(19, 33);
+            this.rdbRealizarTest.Location = new System.Drawing.Point(19, 48);
             this.rdbRealizarTest.Name = "rdbRealizarTest";
             this.rdbRealizarTest.Size = new System.Drawing.Size(197, 17);
             this.rdbRealizarTest.TabIndex = 1;
@@ -59,21 +58,10 @@
             this.rdbRealizarTest.UseVisualStyleBackColor = true;
             this.rdbRealizarTest.CheckedChanged += new System.EventHandler(this.rdbRealizarTest_CheckedChanged);
             // 
-            // rdbVisualizarResultado
-            // 
-            this.rdbVisualizarResultado.AutoSize = true;
-            this.rdbVisualizarResultado.Location = new System.Drawing.Point(19, 81);
-            this.rdbVisualizarResultado.Name = "rdbVisualizarResultado";
-            this.rdbVisualizarResultado.Size = new System.Drawing.Size(164, 17);
-            this.rdbVisualizarResultado.TabIndex = 2;
-            this.rdbVisualizarResultado.TabStop = true;
-            this.rdbVisualizarResultado.Text = "VISUALIZAR RESULTADOS";
-            this.rdbVisualizarResultado.UseVisualStyleBackColor = true;
-            // 
             // rdbVolverInicio
             // 
             this.rdbVolverInicio.AutoSize = true;
-            this.rdbVolverInicio.Location = new System.Drawing.Point(19, 130);
+            this.rdbVolverInicio.Location = new System.Drawing.Point(19, 114);
             this.rdbVolverInicio.Name = "rdbVolverInicio";
             this.rdbVolverInicio.Size = new System.Drawing.Size(177, 17);
             this.rdbVolverInicio.TabIndex = 3;
@@ -89,15 +77,15 @@
             this.btnContinuarMenu.TabIndex = 4;
             this.btnContinuarMenu.Text = "CONTINUAR";
             this.btnContinuarMenu.UseVisualStyleBackColor = true;
+            this.btnContinuarMenu.Click += new System.EventHandler(this.btnContinuarMenu_Click);
             // 
             // gpbGrupoMenuP
             // 
             this.gpbGrupoMenuP.Controls.Add(this.rdbRealizarTest);
-            this.gpbGrupoMenuP.Controls.Add(this.rdbVisualizarResultado);
             this.gpbGrupoMenuP.Controls.Add(this.rdbVolverInicio);
             this.gpbGrupoMenuP.Location = new System.Drawing.Point(240, 106);
             this.gpbGrupoMenuP.Name = "gpbGrupoMenuP";
-            this.gpbGrupoMenuP.Size = new System.Drawing.Size(299, 190);
+            this.gpbGrupoMenuP.Size = new System.Drawing.Size(299, 157);
             this.gpbGrupoMenuP.TabIndex = 5;
             this.gpbGrupoMenuP.TabStop = false;
             this.gpbGrupoMenuP.Text = "Elija una de las opciones ";
@@ -111,7 +99,7 @@
             this.Controls.Add(this.btnContinuarMenu);
             this.Controls.Add(this.lblMenuPrincipal);
             this.Name = "MenuPrincipalTest";
-            this.Text = "Form1";
+            this.Text = "MENÚ PRINCIPAL";
             this.gpbGrupoMenuP.ResumeLayout(false);
             this.gpbGrupoMenuP.PerformLayout();
             this.ResumeLayout(false);
@@ -123,7 +111,6 @@
 
         private System.Windows.Forms.Label lblMenuPrincipal;
         private System.Windows.Forms.RadioButton rdbRealizarTest;
-        private System.Windows.Forms.RadioButton rdbVisualizarResultado;
         private System.Windows.Forms.RadioButton rdbVolverInicio;
         private System.Windows.Forms.Button btnContinuarMenu;
         private System.Windows.Forms.GroupBox gpbGrupoMenuP;

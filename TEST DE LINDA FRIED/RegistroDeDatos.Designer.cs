@@ -54,10 +54,10 @@ namespace TEST_DE_LINDA_FRIED
             this.cboTipoDocumento = new System.Windows.Forms.ComboBox();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.gbSexo = new System.Windows.Forms.GroupBox();
-            this.txtMunicipioResidencia = new System.Windows.Forms.TextBox();
-            this.txtDepartamentoResidencia = new System.Windows.Forms.TextBox();
             this.txtDirecciónResidencia = new System.Windows.Forms.TextBox();
             this.btnContinuarRegistrodedatos = new System.Windows.Forms.Button();
+            this.cboDepartamentoResidencia = new System.Windows.Forms.ComboBox();
+            this.cboMunicipioDeResidencia = new System.Windows.Forms.ComboBox();
             this.gbSexo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -229,6 +229,7 @@ namespace TEST_DE_LINDA_FRIED
             this.txtNumeroDocumento.Name = "txtNumeroDocumento";
             this.txtNumeroDocumento.Size = new System.Drawing.Size(144, 20);
             this.txtNumeroDocumento.TabIndex = 18;
+
             // 
             // cboTipoDocumento
             // 
@@ -261,27 +262,12 @@ namespace TEST_DE_LINDA_FRIED
             this.gbSexo.TabStop = false;
             this.gbSexo.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // txtMunicipioResidencia
-            // 
-            this.txtMunicipioResidencia.Location = new System.Drawing.Point(587, 185);
-            this.txtMunicipioResidencia.Name = "txtMunicipioResidencia";
-            this.txtMunicipioResidencia.Size = new System.Drawing.Size(153, 20);
-            this.txtMunicipioResidencia.TabIndex = 22;
-            // 
-            // txtDepartamentoResidencia
-            // 
-            this.txtDepartamentoResidencia.Location = new System.Drawing.Point(587, 227);
-            this.txtDepartamentoResidencia.Name = "txtDepartamentoResidencia";
-            this.txtDepartamentoResidencia.Size = new System.Drawing.Size(153, 20);
-            this.txtDepartamentoResidencia.TabIndex = 23;
-            // 
             // txtDirecciónResidencia
             // 
             this.txtDirecciónResidencia.Location = new System.Drawing.Point(587, 276);
             this.txtDirecciónResidencia.Name = "txtDirecciónResidencia";
             this.txtDirecciónResidencia.Size = new System.Drawing.Size(153, 20);
             this.txtDirecciónResidencia.TabIndex = 24;
-            this.txtDirecciónResidencia.TextChanged += new System.EventHandler(this.txtDirecciónResidencia_TextChanged);
             // 
             // btnContinuarRegistrodedatos
             // 
@@ -293,16 +279,47 @@ namespace TEST_DE_LINDA_FRIED
             this.btnContinuarRegistrodedatos.UseVisualStyleBackColor = true;
             this.btnContinuarRegistrodedatos.Click += new System.EventHandler(this.btnContinuarRegistrodedatos_Click);
             // 
+            // cboDepartamentoResidencia
+            // 
+            this.cboDepartamentoResidencia.FormattingEnabled = true;
+            this.cboDepartamentoResidencia.Items.AddRange(new object[] {
+            "Antioquía",
+            "Chocó",
+            "La Guajira",
+            "Magdalena",
+            "Risaralda",
+            "Tolima",
+            "Valle del Cauca"});
+            this.cboDepartamentoResidencia.Location = new System.Drawing.Point(587, 226);
+            this.cboDepartamentoResidencia.Name = "cboDepartamentoResidencia";
+            this.cboDepartamentoResidencia.Size = new System.Drawing.Size(121, 21);
+            this.cboDepartamentoResidencia.TabIndex = 26;
+            // 
+            // cboMunicipioDeResidencia
+            // 
+            this.cboMunicipioDeResidencia.FormattingEnabled = true;
+            this.cboMunicipioDeResidencia.Items.AddRange(new object[] {
+            "Cali",
+            "Medellin",
+            "Itagui",
+            "Pereira Santuario",
+            "Santa Marta",
+            "Ibague"});
+            this.cboMunicipioDeResidencia.Location = new System.Drawing.Point(587, 184);
+            this.cboMunicipioDeResidencia.Name = "cboMunicipioDeResidencia";
+            this.cboMunicipioDeResidencia.Size = new System.Drawing.Size(121, 21);
+            this.cboMunicipioDeResidencia.TabIndex = 27;
+            // 
             // IngresoDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cboMunicipioDeResidencia);
+            this.Controls.Add(this.cboDepartamentoResidencia);
             this.Controls.Add(this.btnContinuarRegistrodedatos);
             this.Controls.Add(this.txtDirecciónResidencia);
-            this.Controls.Add(this.txtDepartamentoResidencia);
-            this.Controls.Add(this.txtMunicipioResidencia);
             this.Controls.Add(this.gbSexo);
             this.Controls.Add(this.dtpFechaNacimiento);
             this.Controls.Add(this.cboTipoDocumento);
@@ -356,10 +373,11 @@ namespace TEST_DE_LINDA_FRIED
         private System.Windows.Forms.ComboBox cboTipoDocumento;
         private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
         private System.Windows.Forms.GroupBox gbSexo;
-        private System.Windows.Forms.TextBox txtMunicipioResidencia;
-        private System.Windows.Forms.TextBox txtDepartamentoResidencia;
         private System.Windows.Forms.TextBox txtDirecciónResidencia;
         private System.Windows.Forms.Button btnContinuarRegistrodedatos;
+        private ComboBox cboDepartamentoResidencia;
+        private ComboBox cboMunicipioDeResidencia;
+        private EventHandler txtNumeroDocumento_TextChanged;
     }
 
 }
