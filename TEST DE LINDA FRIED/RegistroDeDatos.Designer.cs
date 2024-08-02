@@ -58,18 +58,26 @@ namespace TEST_DE_LINDA_FRIED
             this.btnContinuarRegistrodedatos = new System.Windows.Forms.Button();
             this.cboDepartamentoResidencia = new System.Windows.Forms.ComboBox();
             this.cboMunicipioDeResidencia = new System.Windows.Forms.ComboBox();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.lbl8 = new System.Windows.Forms.Label();
+            this.lbl9 = new System.Windows.Forms.Label();
             this.gbSexo.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSexo
             // 
             this.lblSexo.AutoSize = true;
-            this.lblSexo.Location = new System.Drawing.Point(409, 137);
+            this.lblSexo.Location = new System.Drawing.Point(433, 137);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(31, 13);
             this.lblSexo.TabIndex = 0;
             this.lblSexo.Text = "Sexo";
-            this.lblSexo.Click += new System.EventHandler(this.label1_Click);
             // 
             // rdbFemenino
             // 
@@ -97,7 +105,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.lblRegistroDeDatos.AutoSize = true;
             this.lblRegistroDeDatos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistroDeDatos.Location = new System.Drawing.Point(317, 19);
+            this.lblRegistroDeDatos.Location = new System.Drawing.Point(421, 21);
             this.lblRegistroDeDatos.Name = "lblRegistroDeDatos";
             this.lblRegistroDeDatos.Size = new System.Drawing.Size(200, 15);
             this.lblRegistroDeDatos.TabIndex = 3;
@@ -111,7 +119,6 @@ namespace TEST_DE_LINDA_FRIED
             this.lblPrimerNombre.Size = new System.Drawing.Size(76, 13);
             this.lblPrimerNombre.TabIndex = 4;
             this.lblPrimerNombre.Text = "Primer Nombre";
-            this.lblPrimerNombre.Click += new System.EventHandler(this.lblPrimerNombre_Click);
             // 
             // lblSegundoNombre
             // 
@@ -161,7 +168,7 @@ namespace TEST_DE_LINDA_FRIED
             // lblFechaNacimiento
             // 
             this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(409, 81);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(433, 81);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
             this.lblFechaNacimiento.Size = new System.Drawing.Size(108, 13);
             this.lblFechaNacimiento.TabIndex = 10;
@@ -170,7 +177,7 @@ namespace TEST_DE_LINDA_FRIED
             // lblDepartamentoResidencia
             // 
             this.lblDepartamentoResidencia.AutoSize = true;
-            this.lblDepartamentoResidencia.Location = new System.Drawing.Point(409, 235);
+            this.lblDepartamentoResidencia.Location = new System.Drawing.Point(433, 192);
             this.lblDepartamentoResidencia.Name = "lblDepartamentoResidencia";
             this.lblDepartamentoResidencia.Size = new System.Drawing.Size(148, 13);
             this.lblDepartamentoResidencia.TabIndex = 11;
@@ -179,7 +186,7 @@ namespace TEST_DE_LINDA_FRIED
             // lblDireecciónResidencia
             // 
             this.lblDireecciónResidencia.AutoSize = true;
-            this.lblDireecciónResidencia.Location = new System.Drawing.Point(409, 284);
+            this.lblDireecciónResidencia.Location = new System.Drawing.Point(433, 284);
             this.lblDireecciónResidencia.Name = "lblDireecciónResidencia";
             this.lblDireecciónResidencia.Size = new System.Drawing.Size(123, 13);
             this.lblDireecciónResidencia.TabIndex = 12;
@@ -188,16 +195,16 @@ namespace TEST_DE_LINDA_FRIED
             // lblMunicipioResidencia
             // 
             this.lblMunicipioResidencia.AutoSize = true;
-            this.lblMunicipioResidencia.Location = new System.Drawing.Point(409, 193);
+            this.lblMunicipioResidencia.Location = new System.Drawing.Point(433, 234);
             this.lblMunicipioResidencia.Name = "lblMunicipioResidencia";
             this.lblMunicipioResidencia.Size = new System.Drawing.Size(123, 13);
             this.lblMunicipioResidencia.TabIndex = 13;
             this.lblMunicipioResidencia.Text = "Municipio de Residencia";
-            this.lblMunicipioResidencia.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtPirmerNombre
             // 
             this.txtPirmerNombre.Location = new System.Drawing.Point(228, 78);
+            this.txtPirmerNombre.MaxLength = 20;
             this.txtPirmerNombre.Name = "txtPirmerNombre";
             this.txtPirmerNombre.Size = new System.Drawing.Size(144, 20);
             this.txtPirmerNombre.TabIndex = 14;
@@ -205,6 +212,7 @@ namespace TEST_DE_LINDA_FRIED
             // txtSegundoNombre
             // 
             this.txtSegundoNombre.Location = new System.Drawing.Point(228, 130);
+            this.txtSegundoNombre.MaxLength = 20;
             this.txtSegundoNombre.Name = "txtSegundoNombre";
             this.txtSegundoNombre.Size = new System.Drawing.Size(144, 20);
             this.txtSegundoNombre.TabIndex = 15;
@@ -212,6 +220,7 @@ namespace TEST_DE_LINDA_FRIED
             // txtPrimerApellido
             // 
             this.txtPrimerApellido.Location = new System.Drawing.Point(228, 175);
+            this.txtPrimerApellido.MaxLength = 20;
             this.txtPrimerApellido.Name = "txtPrimerApellido";
             this.txtPrimerApellido.Size = new System.Drawing.Size(144, 20);
             this.txtPrimerApellido.TabIndex = 16;
@@ -219,6 +228,7 @@ namespace TEST_DE_LINDA_FRIED
             // txtSegundoApellido
             // 
             this.txtSegundoApellido.Location = new System.Drawing.Point(228, 227);
+            this.txtSegundoApellido.MaxLength = 20;
             this.txtSegundoApellido.Name = "txtSegundoApellido";
             this.txtSegundoApellido.Size = new System.Drawing.Size(144, 20);
             this.txtSegundoApellido.TabIndex = 17;
@@ -226,10 +236,11 @@ namespace TEST_DE_LINDA_FRIED
             // txtNumeroDocumento
             // 
             this.txtNumeroDocumento.Location = new System.Drawing.Point(228, 276);
+            this.txtNumeroDocumento.MaxLength = 12;
             this.txtNumeroDocumento.Name = "txtNumeroDocumento";
             this.txtNumeroDocumento.Size = new System.Drawing.Size(144, 20);
             this.txtNumeroDocumento.TabIndex = 18;
-
+            this.txtNumeroDocumento.TextChanged += new System.EventHandler(this.txtNumeroDocumento_TextChanged_1);
             // 
             // cboTipoDocumento
             // 
@@ -245,7 +256,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(587, 79);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(664, 81);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaNacimiento.TabIndex = 20;
@@ -255,23 +266,23 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbSexo.Controls.Add(this.rdbFemenino);
             this.gbSexo.Controls.Add(this.rdbMaculino);
-            this.gbSexo.Location = new System.Drawing.Point(587, 118);
+            this.gbSexo.Location = new System.Drawing.Point(664, 120);
             this.gbSexo.Name = "gbSexo";
-            this.gbSexo.Size = new System.Drawing.Size(185, 46);
+            this.gbSexo.Size = new System.Drawing.Size(200, 46);
             this.gbSexo.TabIndex = 21;
             this.gbSexo.TabStop = false;
-            this.gbSexo.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtDirecciónResidencia
             // 
-            this.txtDirecciónResidencia.Location = new System.Drawing.Point(587, 276);
+            this.txtDirecciónResidencia.Location = new System.Drawing.Point(664, 278);
+            this.txtDirecciónResidencia.MaxLength = 100;
             this.txtDirecciónResidencia.Name = "txtDirecciónResidencia";
             this.txtDirecciónResidencia.Size = new System.Drawing.Size(153, 20);
             this.txtDirecciónResidencia.TabIndex = 24;
             // 
             // btnContinuarRegistrodedatos
             // 
-            this.btnContinuarRegistrodedatos.Location = new System.Drawing.Point(371, 394);
+            this.btnContinuarRegistrodedatos.Location = new System.Drawing.Point(505, 397);
             this.btnContinuarRegistrodedatos.Name = "btnContinuarRegistrodedatos";
             this.btnContinuarRegistrodedatos.Size = new System.Drawing.Size(91, 30);
             this.btnContinuarRegistrodedatos.TabIndex = 25;
@@ -290,7 +301,7 @@ namespace TEST_DE_LINDA_FRIED
             "Risaralda",
             "Tolima",
             "Valle del Cauca"});
-            this.cboDepartamentoResidencia.Location = new System.Drawing.Point(587, 226);
+            this.cboDepartamentoResidencia.Location = new System.Drawing.Point(664, 184);
             this.cboDepartamentoResidencia.Name = "cboDepartamentoResidencia";
             this.cboDepartamentoResidencia.Size = new System.Drawing.Size(121, 21);
             this.cboDepartamentoResidencia.TabIndex = 26;
@@ -305,17 +316,124 @@ namespace TEST_DE_LINDA_FRIED
             "Pereira Santuario",
             "Santa Marta",
             "Ibague"});
-            this.cboMunicipioDeResidencia.Location = new System.Drawing.Point(587, 184);
+            this.cboMunicipioDeResidencia.Location = new System.Drawing.Point(664, 232);
             this.cboMunicipioDeResidencia.Name = "cboMunicipioDeResidencia";
             this.cboMunicipioDeResidencia.Size = new System.Drawing.Size(121, 21);
             this.cboMunicipioDeResidencia.TabIndex = 27;
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbl1.ForeColor = System.Drawing.Color.Red;
+            this.lbl1.Location = new System.Drawing.Point(378, 78);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(11, 13);
+            this.lbl1.TabIndex = 29;
+            this.lbl1.Text = "*";
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbl2.ForeColor = System.Drawing.Color.Red;
+            this.lbl2.Location = new System.Drawing.Point(378, 175);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(11, 13);
+            this.lbl2.TabIndex = 30;
+            this.lbl2.Text = "*";
+            // 
+            // lbl3
+            // 
+            this.lbl3.AutoSize = true;
+            this.lbl3.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbl3.ForeColor = System.Drawing.Color.Red;
+            this.lbl3.Location = new System.Drawing.Point(378, 276);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(11, 13);
+            this.lbl3.TabIndex = 31;
+            this.lbl3.Text = "*";
+            // 
+            // lbl4
+            // 
+            this.lbl4.AutoSize = true;
+            this.lbl4.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbl4.ForeColor = System.Drawing.Color.Red;
+            this.lbl4.Location = new System.Drawing.Point(378, 344);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(11, 13);
+            this.lbl4.TabIndex = 32;
+            this.lbl4.Text = "*";
+            // 
+            // lbl5
+            // 
+            this.lbl5.AutoSize = true;
+            this.lbl5.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbl5.Location = new System.Drawing.Point(870, 80);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(11, 13);
+            this.lbl5.TabIndex = 33;
+            this.lbl5.Text = "*";
+            // 
+            // lbl6
+            // 
+            this.lbl6.AutoSize = true;
+            this.lbl6.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbl6.ForeColor = System.Drawing.Color.Red;
+            this.lbl6.Location = new System.Drawing.Point(870, 130);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(11, 13);
+            this.lbl6.TabIndex = 34;
+            this.lbl6.Text = "*";
+            // 
+            // lbl7
+            // 
+            this.lbl7.AutoSize = true;
+            this.lbl7.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbl7.ForeColor = System.Drawing.Color.Red;
+            this.lbl7.Location = new System.Drawing.Point(791, 180);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(11, 13);
+            this.lbl7.TabIndex = 35;
+            this.lbl7.Text = "*";
+            // 
+            // lbl8
+            // 
+            this.lbl8.AutoSize = true;
+            this.lbl8.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbl8.ForeColor = System.Drawing.Color.Red;
+            this.lbl8.Location = new System.Drawing.Point(791, 229);
+            this.lbl8.Name = "lbl8";
+            this.lbl8.Size = new System.Drawing.Size(11, 13);
+            this.lbl8.TabIndex = 36;
+            this.lbl8.Text = "*";
+            // 
+            // lbl9
+            // 
+            this.lbl9.AutoSize = true;
+            this.lbl9.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbl9.ForeColor = System.Drawing.Color.Red;
+            this.lbl9.Location = new System.Drawing.Point(823, 278);
+            this.lbl9.Name = "lbl9";
+            this.lbl9.Size = new System.Drawing.Size(11, 13);
+            this.lbl9.TabIndex = 37;
+            this.lbl9.Text = "*";
             // 
             // IngresoDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1061, 450);
+            this.Controls.Add(this.lbl9);
+            this.Controls.Add(this.lbl8);
+            this.Controls.Add(this.lbl7);
+            this.Controls.Add(this.lbl6);
+            this.Controls.Add(this.lbl5);
+            this.Controls.Add(this.lbl4);
+            this.Controls.Add(this.lbl3);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.cboMunicipioDeResidencia);
             this.Controls.Add(this.cboDepartamentoResidencia);
             this.Controls.Add(this.btnContinuarRegistrodedatos);
@@ -377,7 +495,15 @@ namespace TEST_DE_LINDA_FRIED
         private System.Windows.Forms.Button btnContinuarRegistrodedatos;
         private ComboBox cboDepartamentoResidencia;
         private ComboBox cboMunicipioDeResidencia;
-        private EventHandler txtNumeroDocumento_TextChanged;
+        private Label lbl1;
+        private Label lbl2;
+        private Label lbl3;
+        private Label lbl4;
+        private Label lbl5;
+        private Label lbl6;
+        private Label lbl7;
+        private Label lbl8;
+        private Label lbl9;
     }
 
 }

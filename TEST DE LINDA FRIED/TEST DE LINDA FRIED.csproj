@@ -66,12 +66,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RespuestasTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RespuestasTest.Designer.cs">
-      <DependentUpon>RespuestasTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="TestDeLindaFried.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,9 +90,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RespuestasTest.resx">
-      <DependentUpon>RespuestasTest.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TestDeLindaFried.resx">
       <DependentUpon>TestDeLindaFried.cs</DependentUpon>
     </EmbeddedResource>

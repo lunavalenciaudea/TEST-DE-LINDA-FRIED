@@ -74,9 +74,7 @@ namespace TEST_DE_LINDA_FRIED
             this.rdbSi9 = new System.Windows.Forms.RadioButton();
             this.btnGuardarTest = new System.Windows.Forms.Button();
             this.lblConteodeRespuestasSI = new System.Windows.Forms.Label();
-            this.txtRespuestasSI = new System.Windows.Forms.TextBox();
-            this.txtRespuestasNO = new System.Windows.Forms.TextBox();
-            this.lblConteodeRespuestasNO = new System.Windows.Forms.Label();
+            this.btnVolverAlInicio = new System.Windows.Forms.Button();
             this.gbPregunta1.SuspendLayout();
             this.gbPregunta2.SuspendLayout();
             this.gbPregunta3.SuspendLayout();
@@ -92,7 +90,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(297, 25);
+            this.lblTitulo.Location = new System.Drawing.Point(463, 24);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(150, 15);
             this.lblTitulo.TabIndex = 0;
@@ -104,36 +102,36 @@ namespace TEST_DE_LINDA_FRIED
             this.lblPrimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrimer.Location = new System.Drawing.Point(47, 85);
             this.lblPrimer.Name = "lblPrimer";
-            this.lblPrimer.Size = new System.Drawing.Size(184, 13);
+            this.lblPrimer.Size = new System.Drawing.Size(169, 13);
             this.lblPrimer.TabIndex = 1;
-            this.lblPrimer.Text = "1. Perdida involuntaria de peso";
+            this.lblPrimer.Text = "Perdida involuntaria de peso";
             // 
             // lblPregunta1
             // 
             this.lblPregunta1.AutoSize = true;
             this.lblPregunta1.Location = new System.Drawing.Point(79, 116);
             this.lblPregunta1.Name = "lblPregunta1";
-            this.lblPregunta1.Size = new System.Drawing.Size(346, 13);
+            this.lblPregunta1.Size = new System.Drawing.Size(358, 13);
             this.lblPregunta1.TabIndex = 2;
-            this.lblPregunta1.Text = "¿En el ultimo año, usted ha perdido mas de 5 kg de peso, sin intención?";
+            this.lblPregunta1.Text = "1. ¿En el ultimo año, usted ha perdido mas de 5 kg de peso, sin intención?";
             // 
             // lblPregunta2
             // 
             this.lblPregunta2.AutoSize = true;
             this.lblPregunta2.Location = new System.Drawing.Point(79, 149);
             this.lblPregunta2.Name = "lblPregunta2";
-            this.lblPregunta2.Size = new System.Drawing.Size(277, 13);
+            this.lblPregunta2.Size = new System.Drawing.Size(289, 13);
             this.lblPregunta2.TabIndex = 3;
-            this.lblPregunta2.Text = "¿En los ultimos tres meses ha perdido peso sin intención?";
+            this.lblPregunta2.Text = "2. ¿En los ultimos tres meses ha perdido peso sin intención?";
             // 
             // lblPregunta3
             // 
             this.lblPregunta3.AutoSize = true;
             this.lblPregunta3.Location = new System.Drawing.Point(82, 185);
             this.lblPregunta3.Name = "lblPregunta3";
-            this.lblPregunta3.Size = new System.Drawing.Size(238, 13);
+            this.lblPregunta3.Size = new System.Drawing.Size(250, 13);
             this.lblPregunta3.TabIndex = 4;
-            this.lblPregunta3.Text = "Calculo de indice de masa corporal (peso/talla*2)";
+            this.lblPregunta3.Text = "3. Calculo de indice de masa corporal (peso/talla*2)";
             // 
             // lblSegunda
             // 
@@ -141,36 +139,36 @@ namespace TEST_DE_LINDA_FRIED
             this.lblSegunda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSegunda.Location = new System.Drawing.Point(47, 214);
             this.lblSegunda.Name = "lblSegunda";
-            this.lblSegunda.Size = new System.Drawing.Size(139, 13);
+            this.lblSegunda.Size = new System.Drawing.Size(124, 13);
             this.lblSegunda.TabIndex = 5;
-            this.lblSegunda.Text = "2. Baja actividad física";
+            this.lblSegunda.Text = "Baja actividad física";
             // 
             // lblPregunta4
             // 
             this.lblPregunta4.AutoSize = true;
             this.lblPregunta4.Location = new System.Drawing.Point(82, 245);
             this.lblPregunta4.Name = "lblPregunta4";
-            this.lblPregunta4.Size = new System.Drawing.Size(260, 13);
+            this.lblPregunta4.Size = new System.Drawing.Size(272, 13);
             this.lblPregunta4.TabIndex = 6;
-            this.lblPregunta4.Text = "¿Hace usted ejercicio frecuente de manera vigorosa?";
+            this.lblPregunta4.Text = "4. ¿Hace usted ejercicio frecuente de manera vigorosa?";
             // 
             // lblPregunta5
             // 
             this.lblPregunta5.AutoSize = true;
             this.lblPregunta5.Location = new System.Drawing.Point(82, 283);
             this.lblPregunta5.Name = "lblPregunta5";
-            this.lblPregunta5.Size = new System.Drawing.Size(236, 13);
+            this.lblPregunta5.Size = new System.Drawing.Size(248, 13);
             this.lblPregunta5.TabIndex = 7;
-            this.lblPregunta5.Text = "¿Camina largas distancias de manera frecuente?";
+            this.lblPregunta5.Text = "5. ¿Camina largas distancias de manera frecuente?";
             // 
             // lblPregunta6
             // 
             this.lblPregunta6.AutoSize = true;
             this.lblPregunta6.Location = new System.Drawing.Point(82, 323);
             this.lblPregunta6.Name = "lblPregunta6";
-            this.lblPregunta6.Size = new System.Drawing.Size(237, 13);
+            this.lblPregunta6.Size = new System.Drawing.Size(249, 13);
             this.lblPregunta6.TabIndex = 8;
-            this.lblPregunta6.Text = "¿Camina cortas distancias de manera frecuente?";
+            this.lblPregunta6.Text = "6. ¿Camina cortas distancias de manera frecuente?";
             // 
             // lblTercera
             // 
@@ -178,18 +176,18 @@ namespace TEST_DE_LINDA_FRIED
             this.lblTercera.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTercera.Location = new System.Drawing.Point(50, 364);
             this.lblTercera.Name = "lblTercera";
-            this.lblTercera.Size = new System.Drawing.Size(340, 13);
+            this.lblTercera.Size = new System.Drawing.Size(325, 13);
             this.lblTercera.TabIndex = 9;
-            this.lblTercera.Text = "3. Autoreporte de cansancio físico ( fátiga o agotamiento )";
+            this.lblTercera.Text = "Autoreporte de cansancio físico ( fátiga o agotamiento )";
             // 
             // lblPregunta7
             // 
             this.lblPregunta7.AutoSize = true;
             this.lblPregunta7.Location = new System.Drawing.Point(82, 395);
             this.lblPregunta7.Name = "lblPregunta7";
-            this.lblPregunta7.Size = new System.Drawing.Size(234, 13);
+            this.lblPregunta7.Size = new System.Drawing.Size(246, 13);
             this.lblPregunta7.TabIndex = 10;
-            this.lblPregunta7.Text = "¿Siente isted que vive cansado todo el tiempo ?";
+            this.lblPregunta7.Text = "7. ¿Siente isted que vive cansado todo el tiempo ?";
             // 
             // lblCuarta
             // 
@@ -197,28 +195,28 @@ namespace TEST_DE_LINDA_FRIED
             this.lblCuarta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCuarta.Location = new System.Drawing.Point(50, 439);
             this.lblCuarta.Name = "lblCuarta";
-            this.lblCuarta.Size = new System.Drawing.Size(235, 13);
+            this.lblCuarta.Size = new System.Drawing.Size(220, 13);
             this.lblCuarta.TabIndex = 11;
-            this.lblCuarta.Text = "4. La disminución de la fuerza de agarre";
+            this.lblCuarta.Text = "La disminución de la fuerza de agarre";
             // 
             // lblPregunta8
             // 
             this.lblPregunta8.AutoSize = true;
             this.lblPregunta8.Location = new System.Drawing.Point(82, 476);
             this.lblPregunta8.Name = "lblPregunta8";
-            this.lblPregunta8.Size = new System.Drawing.Size(374, 13);
+            this.lblPregunta8.Size = new System.Drawing.Size(386, 13);
             this.lblPregunta8.TabIndex = 12;
-            this.lblPregunta8.Text = "Se mide la fuerza muscular prensil de la mano y el antebrazo con dinamometro";
+            this.lblPregunta8.Text = "8. Se mide la fuerza muscular prensil de la mano y el antebrazo con dinamometro";
             // 
             // lblPregunta9
             // 
             this.lblPregunta9.AutoSize = true;
             this.lblPregunta9.Location = new System.Drawing.Point(82, 513);
             this.lblPregunta9.Name = "lblPregunta9";
-            this.lblPregunta9.Size = new System.Drawing.Size(647, 13);
+            this.lblPregunta9.Size = new System.Drawing.Size(659, 13);
             this.lblPregunta9.TabIndex = 13;
-            this.lblPregunta9.Text = "La persona camina a ritmo habitual 4 metros. El trayecto debe medirse centimetros" +
-    " (cinta metrica) y el tiempo en segundos (cronometro). ";
+            this.lblPregunta9.Text = "9. La persona camina a ritmo habitual 4 metros. El trayecto debe medirse centimet" +
+    "ros (cinta metrica) y el tiempo en segundos (cronometro). ";
             this.lblPregunta9.Click += new System.EventHandler(this.lblPregunta9_Click);
             // 
             // lblPregunta92
@@ -235,7 +233,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbPregunta1.Controls.Add(this.rdbNo1);
             this.gbPregunta1.Controls.Add(this.rdbSi1);
-            this.gbPregunta1.Location = new System.Drawing.Point(451, 97);
+            this.gbPregunta1.Location = new System.Drawing.Point(790, 116);
             this.gbPregunta1.Name = "gbPregunta1";
             this.gbPregunta1.Size = new System.Drawing.Size(176, 40);
             this.gbPregunta1.TabIndex = 15;
@@ -268,7 +266,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbPregunta2.Controls.Add(this.rdbNo2);
             this.gbPregunta2.Controls.Add(this.rdbSi2);
-            this.gbPregunta2.Location = new System.Drawing.Point(451, 135);
+            this.gbPregunta2.Location = new System.Drawing.Point(790, 154);
             this.gbPregunta2.Name = "gbPregunta2";
             this.gbPregunta2.Size = new System.Drawing.Size(176, 40);
             this.gbPregunta2.TabIndex = 16;
@@ -300,7 +298,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbPregunta3.Controls.Add(this.rdbNo3);
             this.gbPregunta3.Controls.Add(this.rdbSi3);
-            this.gbPregunta3.Location = new System.Drawing.Point(451, 168);
+            this.gbPregunta3.Location = new System.Drawing.Point(790, 187);
             this.gbPregunta3.Name = "gbPregunta3";
             this.gbPregunta3.Size = new System.Drawing.Size(176, 40);
             this.gbPregunta3.TabIndex = 17;
@@ -332,7 +330,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbPregunta4.Controls.Add(this.rdbNo4);
             this.gbPregunta4.Controls.Add(this.rdbSi4);
-            this.gbPregunta4.Location = new System.Drawing.Point(451, 233);
+            this.gbPregunta4.Location = new System.Drawing.Point(790, 252);
             this.gbPregunta4.Name = "gbPregunta4";
             this.gbPregunta4.Size = new System.Drawing.Size(176, 40);
             this.gbPregunta4.TabIndex = 18;
@@ -364,7 +362,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbPregunta5.Controls.Add(this.rdbNo5);
             this.gbPregunta5.Controls.Add(this.rdbSi5);
-            this.gbPregunta5.Location = new System.Drawing.Point(451, 270);
+            this.gbPregunta5.Location = new System.Drawing.Point(790, 289);
             this.gbPregunta5.Name = "gbPregunta5";
             this.gbPregunta5.Size = new System.Drawing.Size(176, 40);
             this.gbPregunta5.TabIndex = 19;
@@ -396,7 +394,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbPregunta6.Controls.Add(this.rdbNo6);
             this.gbPregunta6.Controls.Add(this.rdbSi6);
-            this.gbPregunta6.Location = new System.Drawing.Point(451, 308);
+            this.gbPregunta6.Location = new System.Drawing.Point(790, 327);
             this.gbPregunta6.Name = "gbPregunta6";
             this.gbPregunta6.Size = new System.Drawing.Size(176, 40);
             this.gbPregunta6.TabIndex = 20;
@@ -428,7 +426,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbPregunta7.Controls.Add(this.rdbNo7);
             this.gbPregunta7.Controls.Add(this.rdbSi7);
-            this.gbPregunta7.Location = new System.Drawing.Point(451, 378);
+            this.gbPregunta7.Location = new System.Drawing.Point(790, 395);
             this.gbPregunta7.Name = "gbPregunta7";
             this.gbPregunta7.Size = new System.Drawing.Size(176, 40);
             this.gbPregunta7.TabIndex = 21;
@@ -460,7 +458,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbPregunta8.Controls.Add(this.rdbNo8);
             this.gbPregunta8.Controls.Add(this.rdbSi8);
-            this.gbPregunta8.Location = new System.Drawing.Point(508, 455);
+            this.gbPregunta8.Location = new System.Drawing.Point(844, 476);
             this.gbPregunta8.Name = "gbPregunta8";
             this.gbPregunta8.Size = new System.Drawing.Size(190, 34);
             this.gbPregunta8.TabIndex = 22;
@@ -492,7 +490,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             this.gbPregunta9.Controls.Add(this.rdbNo9);
             this.gbPregunta9.Controls.Add(this.rdbSi9);
-            this.gbPregunta9.Location = new System.Drawing.Point(711, 536);
+            this.gbPregunta9.Location = new System.Drawing.Point(844, 578);
             this.gbPregunta9.Name = "gbPregunta9";
             this.gbPregunta9.Size = new System.Drawing.Size(181, 33);
             this.gbPregunta9.TabIndex = 23;
@@ -522,7 +520,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             // btnGuardarTest
             // 
-            this.btnGuardarTest.Location = new System.Drawing.Point(420, 709);
+            this.btnGuardarTest.Location = new System.Drawing.Point(438, 626);
             this.btnGuardarTest.Name = "btnGuardarTest";
             this.btnGuardarTest.Size = new System.Drawing.Size(175, 30);
             this.btnGuardarTest.TabIndex = 24;
@@ -535,44 +533,26 @@ namespace TEST_DE_LINDA_FRIED
             this.lblConteodeRespuestasSI.AutoSize = true;
             this.lblConteodeRespuestasSI.Location = new System.Drawing.Point(346, 615);
             this.lblConteodeRespuestasSI.Name = "lblConteodeRespuestasSI";
-            this.lblConteodeRespuestasSI.Size = new System.Drawing.Size(207, 13);
+            this.lblConteodeRespuestasSI.Size = new System.Drawing.Size(0, 13);
             this.lblConteodeRespuestasSI.TabIndex = 25;
-            this.lblConteodeRespuestasSI.Text = "indique cuantas opciones marco con \"SI\" ";
             // 
-            // txtRespuestasSI
+            // btnVolverAlInicio
             // 
-            this.txtRespuestasSI.Location = new System.Drawing.Point(598, 608);
-            this.txtRespuestasSI.Name = "txtRespuestasSI";
-            this.txtRespuestasSI.Size = new System.Drawing.Size(100, 20);
-            this.txtRespuestasSI.TabIndex = 26;
-            this.txtRespuestasSI.TextChanged += new System.EventHandler(this.txtRespuestasSI_TextChanged);
-            // 
-            // txtRespuestasNO
-            // 
-            this.txtRespuestasNO.Location = new System.Drawing.Point(598, 657);
-            this.txtRespuestasNO.Name = "txtRespuestasNO";
-            this.txtRespuestasNO.Size = new System.Drawing.Size(100, 20);
-            this.txtRespuestasNO.TabIndex = 27;
-            this.txtRespuestasNO.TextChanged += new System.EventHandler(this.txtRespuestasNO_TextChanged);
-            // 
-            // lblConteodeRespuestasNO
-            // 
-            this.lblConteodeRespuestasNO.AutoSize = true;
-            this.lblConteodeRespuestasNO.Location = new System.Drawing.Point(346, 657);
-            this.lblConteodeRespuestasNO.Name = "lblConteodeRespuestasNO";
-            this.lblConteodeRespuestasNO.Size = new System.Drawing.Size(211, 13);
-            this.lblConteodeRespuestasNO.TabIndex = 28;
-            this.lblConteodeRespuestasNO.Text = "Indique cuantas opciones marco con \"NO\"";
+            this.btnVolverAlInicio.Location = new System.Drawing.Point(438, 673);
+            this.btnVolverAlInicio.Name = "btnVolverAlInicio";
+            this.btnVolverAlInicio.Size = new System.Drawing.Size(175, 30);
+            this.btnVolverAlInicio.TabIndex = 29;
+            this.btnVolverAlInicio.Text = "VOLVER AL INICIO";
+            this.btnVolverAlInicio.UseVisualStyleBackColor = true;
+            this.btnVolverAlInicio.Click += new System.EventHandler(this.btnVolverAlInicio_Click);
             // 
             // TESTDELINDAFRIED
             // 
             this.AccessibleName = ".";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 751);
-            this.Controls.Add(this.lblConteodeRespuestasNO);
-            this.Controls.Add(this.txtRespuestasNO);
-            this.Controls.Add(this.txtRespuestasSI);
+            this.ClientSize = new System.Drawing.Size(1088, 751);
+            this.Controls.Add(this.btnVolverAlInicio);
             this.Controls.Add(this.lblConteodeRespuestasSI);
             this.Controls.Add(this.btnGuardarTest);
             this.Controls.Add(this.gbPregunta9);
@@ -673,8 +653,6 @@ namespace TEST_DE_LINDA_FRIED
         private System.Windows.Forms.RadioButton rdbSi9;
         private System.Windows.Forms.Button btnGuardarTest;
         private System.Windows.Forms.Label lblConteodeRespuestasSI;
-        private System.Windows.Forms.TextBox txtRespuestasSI;
-        private System.Windows.Forms.TextBox txtRespuestasNO;
-        private System.Windows.Forms.Label lblConteodeRespuestasNO;
+        private System.Windows.Forms.Button btnVolverAlInicio;
     }
 }

@@ -39,36 +39,37 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(276, 168);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.lblUsuario.Size = new System.Drawing.Size(47, 13);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
-            this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
             // lblIninicoDeSesion
             // 
             this.lblIninicoDeSesion.AutoSize = true;
-            this.lblIninicoDeSesion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIninicoDeSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIninicoDeSesion.Location = new System.Drawing.Point(369, 37);
             this.lblIninicoDeSesion.Name = "lblIninicoDeSesion";
-            this.lblIninicoDeSesion.Size = new System.Drawing.Size(114, 15);
+            this.lblIninicoDeSesion.Size = new System.Drawing.Size(136, 21);
             this.lblIninicoDeSesion.TabIndex = 1;
             this.lblIninicoDeSesion.Text = "Inicio De Sesion ";
-            this.lblIninicoDeSesion.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContraseña.Location = new System.Drawing.Point(276, 216);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(61, 13);
+            this.lblContraseña.Size = new System.Drawing.Size(66, 13);
             this.lblContraseña.TabIndex = 2;
             this.lblContraseña.Text = "Contraseña";
             // 
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(411, 161);
+            this.txtUsuario.MaxLength = 7;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(126, 20);
             this.txtUsuario.TabIndex = 3;
@@ -78,6 +79,7 @@
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(411, 216);
+            this.txtContraseña.MaxLength = 10;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(126, 20);
             this.txtContraseña.TabIndex = 4;
@@ -85,9 +87,10 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.Location = new System.Drawing.Point(396, 329);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.Size = new System.Drawing.Size(75, 30);
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.UseVisualStyleBackColor = true;

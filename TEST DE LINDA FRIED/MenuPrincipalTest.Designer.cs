@@ -39,7 +39,7 @@
             // lblMenuPrincipal
             // 
             this.lblMenuPrincipal.AutoSize = true;
-            this.lblMenuPrincipal.Location = new System.Drawing.Point(342, 41);
+            this.lblMenuPrincipal.Location = new System.Drawing.Point(390, 43);
             this.lblMenuPrincipal.Name = "lblMenuPrincipal";
             this.lblMenuPrincipal.Size = new System.Drawing.Size(101, 13);
             this.lblMenuPrincipal.TabIndex = 0;
@@ -71,7 +71,7 @@
             // 
             // btnContinuarMenu
             // 
-            this.btnContinuarMenu.Location = new System.Drawing.Point(346, 328);
+            this.btnContinuarMenu.Location = new System.Drawing.Point(393, 330);
             this.btnContinuarMenu.Name = "btnContinuarMenu";
             this.btnContinuarMenu.Size = new System.Drawing.Size(97, 27);
             this.btnContinuarMenu.TabIndex = 4;
@@ -83,7 +83,7 @@
             // 
             this.gpbGrupoMenuP.Controls.Add(this.rdbRealizarTest);
             this.gpbGrupoMenuP.Controls.Add(this.rdbVolverInicio);
-            this.gpbGrupoMenuP.Location = new System.Drawing.Point(240, 106);
+            this.gpbGrupoMenuP.Location = new System.Drawing.Point(262, 107);
             this.gpbGrupoMenuP.Name = "gpbGrupoMenuP";
             this.gpbGrupoMenuP.Size = new System.Drawing.Size(299, 157);
             this.gpbGrupoMenuP.TabIndex = 5;
