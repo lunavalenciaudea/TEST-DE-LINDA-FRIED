@@ -150,7 +150,7 @@ namespace TEST_DE_LINDA_FRIED
             // lblNumeroDocumento
             // 
             this.lblNumeroDocumento.AutoSize = true;
-            this.lblNumeroDocumento.Location = new System.Drawing.Point(50, 284);
+            this.lblNumeroDocumento.Location = new System.Drawing.Point(50, 349);
             this.lblNumeroDocumento.Name = "lblNumeroDocumento";
             this.lblNumeroDocumento.Size = new System.Drawing.Size(102, 13);
             this.lblNumeroDocumento.TabIndex = 8;
@@ -159,7 +159,7 @@ namespace TEST_DE_LINDA_FRIED
             // lblTipoDocumento
             // 
             this.lblTipoDocumento.AutoSize = true;
-            this.lblTipoDocumento.Location = new System.Drawing.Point(50, 344);
+            this.lblTipoDocumento.Location = new System.Drawing.Point(50, 285);
             this.lblTipoDocumento.Name = "lblTipoDocumento";
             this.lblTipoDocumento.Size = new System.Drawing.Size(101, 13);
             this.lblTipoDocumento.TabIndex = 9;
@@ -235,7 +235,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             // txtNumeroDocumento
             // 
-            this.txtNumeroDocumento.Location = new System.Drawing.Point(228, 276);
+            this.txtNumeroDocumento.Location = new System.Drawing.Point(228, 341);
             this.txtNumeroDocumento.MaxLength = 12;
             this.txtNumeroDocumento.Name = "txtNumeroDocumento";
             this.txtNumeroDocumento.Size = new System.Drawing.Size(144, 20);
@@ -244,12 +244,13 @@ namespace TEST_DE_LINDA_FRIED
             // 
             // cboTipoDocumento
             // 
+            this.cboTipoDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoDocumento.FormattingEnabled = true;
             this.cboTipoDocumento.Items.AddRange(new object[] {
             "Cedula de Ciudadania",
             "Tarjeta de Identidad",
             "Cedula de Extranjeria"});
-            this.cboTipoDocumento.Location = new System.Drawing.Point(228, 344);
+            this.cboTipoDocumento.Location = new System.Drawing.Point(228, 285);
             this.cboTipoDocumento.Name = "cboTipoDocumento";
             this.cboTipoDocumento.Size = new System.Drawing.Size(144, 21);
             this.cboTipoDocumento.TabIndex = 19;
@@ -292,6 +293,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             // cboDepartamentoResidencia
             // 
+            this.cboDepartamentoResidencia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDepartamentoResidencia.FormattingEnabled = true;
             this.cboDepartamentoResidencia.Items.AddRange(new object[] {
             "Antioquía",
@@ -308,6 +310,7 @@ namespace TEST_DE_LINDA_FRIED
             // 
             // cboMunicipioDeResidencia
             // 
+            this.cboMunicipioDeResidencia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMunicipioDeResidencia.FormattingEnabled = true;
             this.cboMunicipioDeResidencia.Items.AddRange(new object[] {
             "Cali",
@@ -348,7 +351,7 @@ namespace TEST_DE_LINDA_FRIED
             this.lbl3.AutoSize = true;
             this.lbl3.BackColor = System.Drawing.SystemColors.Menu;
             this.lbl3.ForeColor = System.Drawing.Color.Red;
-            this.lbl3.Location = new System.Drawing.Point(378, 276);
+            this.lbl3.Location = new System.Drawing.Point(378, 341);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(11, 13);
             this.lbl3.TabIndex = 31;
@@ -359,7 +362,7 @@ namespace TEST_DE_LINDA_FRIED
             this.lbl4.AutoSize = true;
             this.lbl4.BackColor = System.Drawing.SystemColors.Menu;
             this.lbl4.ForeColor = System.Drawing.Color.Red;
-            this.lbl4.Location = new System.Drawing.Point(378, 344);
+            this.lbl4.Location = new System.Drawing.Point(378, 285);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(11, 13);
             this.lbl4.TabIndex = 32;
