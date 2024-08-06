@@ -81,15 +81,6 @@ namespace TEST_DE_LINDA_FRIED
         this.Hide();
         }
 
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e) 
-        {
-           
-        }
 
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {

@@ -96,21 +96,7 @@ namespace TEST_DE_LINDA_FRIED
                 }
             }
         }
-    
-    private void lblPregunta9_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void TESTDELINDAFRIED_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdbSi1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
         private void btnGuardarTest_Click(object sender, EventArgs e)
         {
             var preguntas = new (System.Windows.Forms.RadioButton si, System.Windows.Forms.RadioButton no)[]

@@ -39,12 +39,11 @@
             // lblMenuPrincipal
             // 
             this.lblMenuPrincipal.AutoSize = true;
-            this.lblMenuPrincipal.Location = new System.Drawing.Point(390, 43);
+            this.lblMenuPrincipal.Location = new System.Drawing.Point(377, 36);
             this.lblMenuPrincipal.Name = "lblMenuPrincipal";
             this.lblMenuPrincipal.Size = new System.Drawing.Size(101, 13);
             this.lblMenuPrincipal.TabIndex = 0;
             this.lblMenuPrincipal.Text = "MENÚ PRINCIPAL ";
-            this.lblMenuPrincipal.Click += new System.EventHandler(this.label1_Click);
             // 
             // rdbRealizarTest
             // 
@@ -56,7 +55,6 @@
             this.rdbRealizarTest.TabStop = true;
             this.rdbRealizarTest.Text = "REALIZAR TEST DE LINDA FRIED";
             this.rdbRealizarTest.UseVisualStyleBackColor = true;
-            this.rdbRealizarTest.CheckedChanged += new System.EventHandler(this.rdbRealizarTest_CheckedChanged);
             // 
             // rdbVolverInicio
             // 
@@ -71,7 +69,7 @@
             // 
             // btnContinuarMenu
             // 
-            this.btnContinuarMenu.Location = new System.Drawing.Point(393, 330);
+            this.btnContinuarMenu.Location = new System.Drawing.Point(381, 327);
             this.btnContinuarMenu.Name = "btnContinuarMenu";
             this.btnContinuarMenu.Size = new System.Drawing.Size(97, 27);
             this.btnContinuarMenu.TabIndex = 4;

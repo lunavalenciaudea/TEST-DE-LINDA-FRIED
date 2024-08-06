@@ -40,15 +40,6 @@ namespace TEST_DE_LINDA_FRIED
             gpbGrupoMenuP.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             gpbGrupoMenuP.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80); // Gris Oscuro
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdbRealizarTest_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
 
         private void btnContinuarMenu_Click(object sender, EventArgs e)
         {

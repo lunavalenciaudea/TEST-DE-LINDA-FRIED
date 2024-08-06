@@ -217,7 +217,6 @@ namespace TEST_DE_LINDA_FRIED
             this.lblPregunta9.TabIndex = 13;
             this.lblPregunta9.Text = "9. La persona camina a ritmo habitual 4 metros. El trayecto debe medirse centimet" +
     "ros (cinta metrica) y el tiempo en segundos (cronometro). ";
-            this.lblPregunta9.Click += new System.EventHandler(this.lblPregunta9_Click);
             // 
             // lblPregunta92
             // 
@@ -260,7 +259,7 @@ namespace TEST_DE_LINDA_FRIED
             this.rdbSi1.TabStop = true;
             this.rdbSi1.Text = "Si";
             this.rdbSi1.UseVisualStyleBackColor = true;
-            this.rdbSi1.CheckedChanged += new System.EventHandler(this.rdbSi1_CheckedChanged);
+
             // 
             // gbPregunta2
             // 
@@ -581,7 +580,6 @@ namespace TEST_DE_LINDA_FRIED
             this.Controls.Add(this.lblTitulo);
             this.Name = "TESTDELINDAFRIED";
             this.Text = "TestDeLindaFried";
-            this.Load += new System.EventHandler(this.TESTDELINDAFRIED_Load);
             this.gbPregunta1.ResumeLayout(false);
             this.gbPregunta1.PerformLayout();
             this.gbPregunta2.ResumeLayout(false);
