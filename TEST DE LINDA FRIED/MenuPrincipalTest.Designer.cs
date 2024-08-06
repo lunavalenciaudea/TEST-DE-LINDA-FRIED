@@ -39,7 +39,7 @@
             // lblMenuPrincipal
             // 
             this.lblMenuPrincipal.AutoSize = true;
-            this.lblMenuPrincipal.Location = new System.Drawing.Point(377, 36);
+            this.lblMenuPrincipal.Location = new System.Drawing.Point(367, 32);
             this.lblMenuPrincipal.Name = "lblMenuPrincipal";
             this.lblMenuPrincipal.Size = new System.Drawing.Size(101, 13);
             this.lblMenuPrincipal.TabIndex = 0;
