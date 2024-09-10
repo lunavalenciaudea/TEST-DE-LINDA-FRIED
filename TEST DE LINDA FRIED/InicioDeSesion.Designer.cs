@@ -1,4 +1,6 @@
-﻿namespace TEST_DE_LINDA_FRIED
+﻿using System;
+
+namespace TEST_DE_LINDA_FRIED
 {
     partial class InicioDeSesion
     {
@@ -92,7 +94,7 @@
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+ 
             // 
             // InicioDeSesion
             // 
@@ -111,7 +113,6 @@
             this.PerformLayout();
 
         }
-
         #endregion
 
         private System.Windows.Forms.Label lblUsuario;

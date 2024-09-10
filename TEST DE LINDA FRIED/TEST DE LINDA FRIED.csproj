@@ -106,5 +106,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestDeLindaFried.BusinessLogic\TestDeLindaFried.BusinessLogic.csproj">
+      <Project>{cb5e38de-dd95-4fc2-8969-b6f25bdca3ba}</Project>
+      <Name>TestDeLindaFried.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestDeLindaFried.Entities\TestDeLindaFried.Entities.csproj">
+      <Project>{9dff4f67-b47f-4ccc-b1f9-60a74927c8dd}</Project>
+      <Name>TestDeLindaFried.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
