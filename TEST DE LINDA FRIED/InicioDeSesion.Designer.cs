@@ -94,7 +94,7 @@ namespace TEST_DE_LINDA_FRIED
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.UseVisualStyleBackColor = true;
- 
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click_1);
             // 
             // InicioDeSesion
             // 

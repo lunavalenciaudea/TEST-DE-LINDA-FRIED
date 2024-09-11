@@ -55,9 +55,18 @@ namespace TEST_DE_LINDA_FRIED
             txtContraseña.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
         }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
-          
+           
+            this.txtContraseña.PasswordChar = '*';
+            this.txtContraseña.UseSystemPasswordChar = true;
+
+        }
+
+        private void btnAceptar_Click_1(object sender, EventArgs e)
+        {
             string usuarioValido = "usuario";
             string contraseñaValida = "contraseña";
 
@@ -67,27 +76,20 @@ namespace TEST_DE_LINDA_FRIED
             if (usuarioIngresado == usuarioValido && contraseñaIngresada == contraseñaValida)
             {
                 MessageBox.Show("Inicio de sesión exitoso");
-                
+
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos");
                 return;
             }
-            
 
-        IngresoDeDatos ingresoDeDatos = new IngresoDeDatos();
-        ingresoDeDatos.Show();
-        this.Hide();
+
+            IngresoDeDatos ingresoDeDatos = new IngresoDeDatos();
+            ingresoDeDatos.Show();
+            this.Hide();
         }
 
-
-        private void txtContraseña_TextChanged(object sender, EventArgs e)
-        {
-           
-            this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.UseSystemPasswordChar = true;
-
-        }
+    
     }
 }
