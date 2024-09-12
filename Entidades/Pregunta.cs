@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades.Preguntas.NumeracionPreguntas
+namespace Entidades
 {
-    public enum Pregunta7
+    public class Pregunta
     {
-        Si = 1,
-        No = 2
+        public int id { get; set; }
+        public string Nombre { get; set; }
     }
 }

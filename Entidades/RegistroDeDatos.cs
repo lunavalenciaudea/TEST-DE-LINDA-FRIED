@@ -10,7 +10,6 @@ namespace Entidades
     {
         public Persona Persona { get; set; }
         public Ciudad Ciudad { get; set; }
-        public Departamento Departamento { get; set; }
         public Sexo Sexo { get; set; }
         public TipoDocumento TipoDocumento { get; set; }
 

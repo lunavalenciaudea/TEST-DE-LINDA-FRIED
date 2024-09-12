@@ -9,16 +9,19 @@ namespace Entidades
 {
     public class Persona
     {
-        public long IdPersona { get; set; }
+        public int IdPersona { get; set; }
         public string PrimerNombre { get; set; }
         public string SegundoNombre { get; set;}
         public string PrimerApellido { get; set;}
-        public string SegundoApellido { get;}
+        public string SegundoApellido { get; set; }
 
         public long NumeroDeDocumento { get; set;}
         public DateTime FechaNacimiento { get; set;}
         public TipoDocumento TipoDocumento { get; set; }
-        public Sexo Sexo { get; set; } 
+        public Sexo Sexo { get; set; }
+        public string DireccionResidencia { get; set; }
+
         
+
     }
 }
