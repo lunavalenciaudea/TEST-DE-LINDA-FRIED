@@ -13,6 +13,7 @@ namespace Entidades
             Si = 1,
             No = 2
         }*///como se pone  
+        public int Id { get; set; }
         public Pregunta Pregunta { get; set; }
     }
 }
