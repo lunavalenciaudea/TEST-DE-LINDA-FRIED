@@ -9,6 +9,6 @@ namespace Repositorio
 {
     public interface IRepositorioSeguridad
     {
-        public Usuario ObtenerUsuario(string NombreUsuario);
+         Usuario ObtenerUsuario(string NombreUsuario);
     }
 }

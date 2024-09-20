@@ -15,7 +15,7 @@ namespace Modelo
         public int Id { get; set; }
         public string NombreUsuario { get; set; }
         public string Contraseña { get; set; }
-        public int IdPersonas { get; set; }
+        public int IdPersona { get; set; }
         public virtual Personas Personas { get; set; }
 
     }

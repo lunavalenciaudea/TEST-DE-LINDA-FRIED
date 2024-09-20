@@ -16,7 +16,8 @@ namespace Modelo
         public string Nombre { get; set; }
         public int IdDepartamento { get; set; }
         public virtual Departamento Departamento { get; set; }
-        public virtual ICollection<Departamento> Departamentos { get; set; }
+        public virtual ICollection<Personas> Personas { get; set; }
+
 
     }
 }

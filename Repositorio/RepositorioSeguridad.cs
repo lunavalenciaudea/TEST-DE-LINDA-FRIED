@@ -8,10 +8,26 @@ using System.Threading.Tasks;
 namespace Repositorio
 {
     public class RepositorioSeguridad : IRepositorioSeguridad
-    { 
-        public Usuario ObtenerUsuario ( string NombreUsuario)
-        {
-            return new Usuario() { Contraseña = "123", NombreUsuario = NombreUsuario };
+    {
+       
+            private Modelo.DBTestsDeLindaFried dbTestsDeLindaFried;
+
+            public RepositorioSeguridadEF()
+            {
+                dbTestsDeLindaFried = new Modelo.DBTestsDeLindaFried();
+            }
+
+            public Usuario ObtenerUsuario(string nombreUsuario)
+            {
+                var usuarioActual = dbTestsDeLindaFried.Usuarios.FirstOrDefault(u => u.NombreUsuario == nombreUsuario);
+
+                if (usuarioActual != null)
+                {
+                    return new Usuario() { NombreUsuario = usuarioActual.NombreUsuario, Contraseña = usuarioActual.Contraseña };
+                }
+
+                return null;
+            }
         }
     }
-}
+

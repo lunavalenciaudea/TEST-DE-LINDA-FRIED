@@ -13,13 +13,12 @@ namespace Modelo
     {
         [Key]
         public int Id { get; set; }
-        public int IdPregunta { get; set; }
-        public virtual Preguntas Preguntas { get; set; } 
-        public virtual ICollection<Preguntas> Pregunta { get; set; }
-        public bool Respuesta { get; set; } 
+        public DateTime Fecha { get; set; }
+        public virtual ICollection<RespuestaPregunta> RespuestasPreguntas { get; set; }
         public int IdPersona { get; set; }
         public virtual Personas Personas { get; set; } 
-        
+
+       
 
     }
 }

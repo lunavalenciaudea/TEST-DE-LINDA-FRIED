@@ -14,6 +14,7 @@ namespace Modelo
         [Key]
         public int Id { get; set; }
         public string Genero { get; set; }
-        public virtual ICollection<Sexo> Sexos { get; set; }
+        public virtual ICollection<Personas> Personas { get; set; }
+
     }
 }
